@@ -9,8 +9,10 @@
 </head>
 
 <body>
+  
     <nav id="navbar">
         <header>DSA Documentation</header>
+        
         <ul>
             <li><a class="nav-link" href="#Introduction">Introduction</a></li>
             <li><a href="#Data_Structures_&_Algorithms" class="nav-link">Data Structures & Algorithms</a></li>
@@ -20,89 +22,121 @@
             <li><a href="#Linked_Lists" class="nav-link">Linked Lists</a></li>
             <li><a href="#Stack" class="nav-link">Stack</a></li>
             <li><a href="#Queue" class="nav-link">Queue</a></li>
+            <li><a href="#Queue" class="nav-link">Recursion</a></li>
+            <li><a href="#Queue" class="nav-link">Searching</a></li>
+            <li><a href="#Queue" class="nav-link">Sorting</a></li>
+            <li><a href="#Queue" class="nav-link">Matix</a></li>
+            <li><a href="#Queue" class="nav-link">Hashing</a></li>
+            <li><a href="#Queue" class="nav-link">Linked List</a></li>
+            <li><a href="#Queue" class="nav-link">Stack</a></li>
+            <li><a href="#Queue" class="nav-link">Tree</a></li>
+            <li><a href="#Queue" class="nav-link">Binary Search Tree</a></li>
+            <li><a href="#Queue" class="nav-link">Heap</a></li>
+            <li><a href="#Queue" class="nav-link">Graph</a></li>
+            <li><a href="#Queue" class="nav-link">Greedy</a></li>
+            <li><a href="#Queue" class="nav-link">Backtracking</a></li>
+            <li><a href="#Queue" class="nav-link">Trie</a></li>
+            <li><a href="#Queue" class="nav-link">Segment & Binary Index Trees</a></li>
 
 
         </ul>
     </nav>
+   
     <main id="main-doc">
+       
+        <nav class="navbar-link">
+            <ul>
+                <li><a href="#">Apna College DsaDheet</a></li>
+                <li><a href="#">LOVE BABBAR DSASHEET</a></li>
+                <li><a href="#">GfG DSA SHEET</a></li>
+                <li><a href="#">ARSH GOYAL DSA SHEET</a></li>
+               
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
-            <article>
-                <p>
-                    <h2>What are Data Structures and Algorithms?</h2>
-                    Data structures and algorithms go hand in hand. You may have a set of data arranged in a certain structure which you then pass into an algorithm to execute in a certain way.
-                    
-                    But data structures and algorithms are not the same things. So let’s look at them separately.
-                    
-                    <h2>What is a Data Structure?</h2>
-                    A data structure is a particular way data is arranged so it can be saved in memory and retrieved for later use.
-                </p>
-                <p>
-                    <h3>Examples of Data Structures</h3>
-Data can be anything that can be saved. It could be primitive types like string, boolean, integer, or float. Or non-primitive types like arrays, linked list trees, stacks, and queues.
-
-Below is an example of a linked list, stack, and queue in Python:
-
-Here's the code for a linked list:
-                </p>
-                <p>
-                    # Linked list
-                    class Node:
-                        def __init__(self, data):
-                            self.data = data
-                            self.next = None
-                    
-                    class My_linkedlist:
-                        def __init__(self):
-                            self.head = None
-                            
-                        def append(self, data):
-                            new_node = Node(data)
-                            if self.head is None:
-                                self.head = new_node
-                                return
-                            last_node = self.head
-                            while last_node.next:
-                                last_node = last_node.next
-                            last_node.next = new_node
-                            
-                        def print_list(self):
-                            current_node = self.head
-                            while current_node:
-                                print(current_node.data)
-                                current_node = current_node.next
-                    
-                    linked_list = My_linkedlist()
-                    linked_list.append("List weekdays from the start:")
-                    linked_list.append("Monday")
-                    linked_list.append("Tuesday")
-                    linked_list.append("Wednesday")
-                    linked_list.append("Thursday")
-                    linked_list.append("Friday")
-                    linked_list.print_list()
-                    
-                    """
-                    Output:
-                    Weekdays:
-                    Monday
-                    Tuesday
-                    Wednesday
-                    Thursday
-                    Friday
-                    """
-                    
-                    print()
-                    print()
-                    
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque placeat provident
-                    voluptatem tempore quam pariatur sunt debitis suscipit eos enim vel earum dolor voluptas, ad fugiat
-                    itaque praesentium excepturi!
-                </p>
-
-
-            </article>
+        
+               
+                
+                <article>
+                    <p>
+                        <h2>What are Data Structures and Algorithms?</h2>
+                        Data structures and algorithms go hand in hand. You may have a set of data arranged in a certain structure which you then pass into an algorithm to execute in a certain way.
+                        
+                        But data structures and algorithms are not the same things. So let’s look at them separately.
+                        
+                        <h2>What is a Data Structure?</h2>
+                        A data structure is a particular way data is arranged so it can be saved in memory and retrieved for later use.
+                    </p>
+                    <p>
+                        <h3>Examples of Data Structures</h3>
+    Data can be anything that can be saved. It could be primitive types like string, boolean, integer, or float. Or non-primitive types like arrays, linked list trees, stacks, and queues.
+    
+    Below is an example of a linked list, stack, and queue in Python:
+    
+    Here's the code for a linked list:
+                    </p>
+                    <code>
+                        # Linked list
+                        class Node:
+                            def __init__(self, data):
+                                self.data = data
+                                self.next = None
+                        
+                        class My_linkedlist:
+                            def __init__(self):
+                                self.head = None
+                                
+                            def append(self, data):
+                                new_node = Node(data)
+                                if self.head is None:
+                                    self.head = new_node
+                                    return
+                                last_node = self.head
+                                while last_node.next:
+                                    last_node = last_node.next
+                                last_node.next = new_node
+                                
+                            def print_list(self):
+                                current_node = self.head
+                                while current_node:
+                                    print(current_node.data)
+                                    current_node = current_node.next
+                        
+                        linked_list = My_linkedlist()
+                        linked_list.append("List weekdays from the start:")
+                        linked_list.append("Monday")
+                        linked_list.append("Tuesday")
+                        linked_list.append("Wednesday")
+                        linked_list.append("Thursday")
+                        linked_list.append("Friday")
+                        linked_list.print_list()
+                        
+                        """
+                        Output:
+                        Weekdays:
+                        Monday
+                        Tuesday
+                        Wednesday
+                        Thursday
+                        Friday
+                        """
+                        
+                        print()
+                        print()
+                        
+                    </code>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque placeat provident
+                        voluptatem tempore quam pariatur sunt debitis suscipit eos enim vel earum dolor voluptas, ad fugiat
+                        itaque praesentium excepturi!
+                    </p>
+    
+    
+                </article>
+        
+            
         </section>
         <section class="main-section" id="Data_Structures_&_Algorithms">
             <header>Data Structures & Algorithms</header>
@@ -186,6 +220,191 @@ Here's the code for a linked list:
             </article>
         </section>
 
+        <section class="main-section" id="Data_Structures">
+            <header>APNA COLLEGE DSA SHEET</header>
+            <Table border ="black">
+                <thead>
+                    <tr>
+                        <th class="level">Level</th>
+                        <th class="text-area">Array</th>
+                    </tr>
+                </thead>
+                
+                <tr>
+                    <td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr>
+                    <td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td></tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td></tr>
+                <tr>
+                    <td class="level medium">Medium</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr>
+                    <td class="level medium">Medium</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level medium">Medium</td>
+                    <td class="text-area">2</td></tr>
+                    <tr>
+                        <td class="level medium">Medium</td>
+                        <td class="text-area">2</td>
+                    </tr>
+                    <tr><td class="level medium">Medium</td>
+                        <td class="text-area">2</td></tr>
+                    <tr>
+                        <td class="level hard">Hard</td>
+                        <td class="text-area">2</td>
+                    </tr>
+                    <tr><td class="level hard">Hard</td>
+                        <td class="text-area">2</td></tr>
+                        <tr>
+                            <td class="level hard">Hard</td>
+                            <td class="text-area">2</td>
+                        </tr>
+                        <tr><td class="level hard">Hard</td>
+                            <td class="text-area">2</td></tr>
+                        </tr>
+                        <tr><td class="level hard">Hard</td>
+                            <td class="text-area">2</td></tr>
+            </Table>
+
+            <Table border ="black" class="a2">
+                <thead>
+                    <tr>
+                        <th class="level">Level</th>
+                        <th class="text-area">String</th>
+                    </tr>
+                </thead>
+                
+                <tr>
+                    <td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr>
+                    <td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td></tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td></tr>
+                <tr>
+                    <td class="level medium">Medium</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr>
+                    <td class="level medium">Medium</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level medium">Medium</td>
+                    <td class="text-area">2</td></tr>
+                    <tr>
+                        <td class="level medium">Medium</td>
+                        <td class="text-area">2</td>
+                    </tr>
+                    <tr><td class="level medium">Medium</td>
+                        <td class="text-area">2</td></tr>
+                    <tr>
+                        <td class="level hard">Hard</td>
+                        <td class="text-area">2</td>
+                    </tr>
+                    <tr><td class="level hard">Hard</td>
+                        <td class="text-area">2</td></tr>
+                        <tr>
+                            <td class="level hard">Hard</td>
+                            <td class="text-area">2</td>
+                        </tr>
+                        <tr><td class="level hard">Hard</td>
+                            <td class="text-area">2</td></tr>
+                        </tr>
+                        <tr><td class="level hard">Hard</td>
+                            <td class="text-area">2</td></tr>
+            </Table>
+        </section>
+
+
+
+        <section class="main-section" id="Data_Structures">
+            <header>Love Babbar DSA SHEET</header>
+            <Table border ="black">
+                <thead>
+                    <tr>
+                        <th class="level">Level</th>
+                        <th class="text-area">Array</th>
+                    </tr>
+                </thead>
+                
+                <tr>
+                    <td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr>
+                    <td class="level easy">Easy</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td></tr>
+                <tr><td class="level easy">Easy</td>
+                    <td class="text-area">2</td></tr>
+                <tr>
+                    <td class="level medium">Medium</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr>
+                    <td class="level medium">Medium</td>
+                    <td class="text-area">2</td>
+                </tr>
+                <tr><td class="level medium">Medium</td>
+                    <td class="text-area">2</td></tr>
+                    <tr>
+                        <td class="level medium">Medium</td>
+                        <td class="text-area">2</td>
+                    </tr>
+                    <tr><td class="level medium">Medium</td>
+                        <td class="text-area">2</td></tr>
+                    <tr>
+                        <td class="level hard">Hard</td>
+                        <td class="text-area">2</td>
+                    </tr>
+                    <tr><td class="level hard">Hard</td>
+                        <td class="text-area">2</td></tr>
+                        <tr>
+                            <td class="level hard">Hard</td>
+                            <td class="text-area">2</td>
+                        </tr>
+                        <tr><td class="level hard">Hard</td>
+                            <td class="text-area">2</td></tr>
+                        </tr>
+                        <tr><td class="level hard">Hard</td>
+                            <td class="text-area">2</td></tr>
+            </Table>
+        </section>
     </main>
+    
 </body>
 </html>
