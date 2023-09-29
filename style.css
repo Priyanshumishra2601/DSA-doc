@@ -1,13 +1,21 @@
 html,
 body {
   min-width: 290px;
-  color: #4d4e53;
-  background-color: #ffffff;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+* {
+  color: var(--mainText);
+}
 
+*:focus {
+  outline: 1px solid black;
+}
+body *{
+  transition: .3s ;
+}
 #navbar {
+  background-color: var(--secondaryColor);
   position: fixed;
   min-width: 290px;
   top: 0px;
@@ -15,11 +23,64 @@ body {
   width: 300px;
   height: 100%;
   border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+ 
+ border-color: rgba(0, 22, 22, 0.4);
 }
 
+
+
+
+.themeOptions {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+  left: 721px;
+}
+.themeOptions .white {
+  background-color: rgb(209, 209, 209);
+}
+.themeOptions .blue {
+  background-color: rgb(79, 79, 117);
+}
+.themeOptions .green {
+  background-color: rgb(114, 160, 114);
+}
+.themeOptions .purple {
+  background-color: rgb(158, 84, 158);
+}
+
+
+#balls {
+  display: flex;
+}
+#ball1 {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 0, 76);
+  border-radius: 50%;
+  margin-right: 7px;
+  margin-top: 3px;
+}
+#ball2 {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 238, 0);
+  border-radius: 50%;
+  margin-right: 7px;
+  margin-top: 3px;
+}
+#ball3 {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(14, 252, 6);
+  border-radius: 50%;
+  margin-top: 3px;
+}
 header {
-  color: black;
+  background-color: var(--secondaryColor);
+  color: var(--mainText);
   margin: 10px;
   text-align: center;
   font-size: 1.8em;
@@ -27,6 +88,7 @@ header {
 }
 
 #main-doc header {
+  background-color: var(--secondaryColor);
   text-align: left;
   margin: 0px;
 }
@@ -55,6 +117,13 @@ header {
   cursor: pointer;
 }
 
+#navbar a:hover {
+ background-color: aqua;
+}
+#navbar a:active {
+  background-color: rgb(26, 63, 63);
+ }
+
 #main-doc {
   position: absolute;
   margin-left: 310px;
@@ -63,17 +132,73 @@ header {
 }
 
 section article {
-  color: #4d4e53;
+  color: var(--mainText);
+  background-color: var(--secondaryColor);
   margin: 15px;
   font-size: 0.96em;
+}
+
+#main {
+  margin: 0 auto;
+ background-color: black;
 }
 
 section li {
   margin: 15px 0px 0px 20px;
 }
 
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #000;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+/* .themeOptions {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -45px;
+  right: -818px;
+} */
 
+.balls {
+  margin: 5px;
+  height: 0px;
+  width: 3px;
+  padding: 14px;
+  border-radius: 100%;
+  border: 2px solid var(--themeDotBorder);
+}
+@keyframes upndown {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 3px;
+  }
+}
 
+.balls:focus {
+  cursor: pointer;
+  transition: 0.1s;
+  /* border: 2px solid var(--themeDotBorder); */
+  /* scale: 1.2; */
+}
+.balls:hover{
+  cursor: pointer;
+  transition: 0.1s;
+  /* border: 2px solid var(--themeDotBorder); */
+  /* scale: 1.2; */
+}
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
   #navbar ul {
@@ -106,4 +231,74 @@ section li {
     margin-left: -10px;
   }
 
+}
+table{
+  background: linear-gradient(45deg, #b9a8a8, transparent);
+  width: 845px;
+  border: black;
+}
+.a2{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.level{
+  width: 30px;
+}
+.text-area{
+  width: 232px;
+}
+tr{
+  width: 70px;
+  text-align: center;
+}
+.easy{
+background-color: green;
+}
+.medium{
+background-color: yellow;
+}
+.hard{
+background-color: red;
+}
+
+/* CSS for the navbar-link at the top of main-doc */
+#main-doc {
+  overflow-x: scroll;
+  overflow-y: auto;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.navbar-link {
+  display: flex;
+  max-height: 60px;
+  border-top: 1px solid #ccc;
+  background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+.navbar-link ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-link li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #333;
+  display: block;
+  white-space: nowrap;
+}
+
+.navbar-link a:hover {
+  background-color: #89c6e5;
 }
