@@ -89,7 +89,7 @@ header {
 
 #main-doc header {
   background-color: var(--secondaryColor);
-  text-align: left;
+  text-align: center;
   margin: 0px;
 }
 
