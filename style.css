@@ -233,8 +233,9 @@ code {
 
 }
 table{
-  background: linear-gradient(45deg, #b9a8a8, transparent);
-  width: 845px;
+  width: 612px;
+  text-align: center;
+  padding-left: 82px;
   border: black;
 }
 .a2{
@@ -251,6 +252,12 @@ table{
 tr{
   width: 70px;
   text-align: center;
+}
+tbody{
+  background: linear-gradient(45deg, black, transparent);
+}
+thead{
+  background: linear-gradient(45deg, #c1bfbf, transparent);
 }
 .easy{
 background-color: green;
@@ -273,6 +280,7 @@ background-color: red;
 }
 
 .navbar-link {
+    padding-left: 200px;
   display: flex;
   max-height: 60px;
   border-top: 1px solid #ccc;
