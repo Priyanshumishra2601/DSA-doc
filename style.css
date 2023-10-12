@@ -5,12 +5,11 @@ body {
   line-height: 1.5;
 }
 :root{
-/*   --mainColor: #9bdaff; */
-  --mainColor: white;
-  --secondaryColor: #001c37;
+  --mainColor: #9bdaff;
+  --secondaryColor: #ffffff;
   --borderColor: #000000;
   --mainText: black;
-  --secondaryText: #4b5156;
+  --secondaryText: #030303;
   --themeDotBorder: #0579ec;
   --previewBg: rgb(251, 249, 243, 0.8);
   --previewShadow: #77662d;
