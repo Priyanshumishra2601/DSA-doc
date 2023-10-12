@@ -330,6 +330,7 @@ background-color: red;
 
 .tab-nav-bar{
   position: relative;
+      padding-left: 170px;
   margin: 0px 10px 50px 10px;
 }
 .tab-navigation{
