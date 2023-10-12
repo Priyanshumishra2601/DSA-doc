@@ -5,7 +5,8 @@ body {
   line-height: 1.5;
 }
 :root{
-  --mainColor: #9bdaff;
+/*   --mainColor: #9bdaff; */
+  --mainColor: white;
   --secondaryColor: #001c37;
   --borderColor: #000000;
   --mainText: black;
