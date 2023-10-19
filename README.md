@@ -5,7 +5,7 @@
 ## Accepting contributions for Hacktoberfest 2023 🥳🎉
 # What is DSA-DOC?
 
-DSA-DOC is basically the data structure and aslgorithm documentry.DSA-DOC is the trusted online community for developers to learn.
+DSA-DOC is basically the data structure and algorithm documentry.DSA-DOC is the trusted online community for developers to learn.
 
 ## Techstack 
 
