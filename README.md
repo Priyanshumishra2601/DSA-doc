@@ -40,8 +40,8 @@ To contribute to DSA-DOC, you should be familiar with some basics of Git and Git
             </a>
    </td>
     <td align="center">
-            <a href="https://github.com/geeky-sambhav">
-              <img src="https://avatars.githubusercontent.com/u/83087385?v=4" width="100px" alt=""/><br />
+            <a href="">
+              <img src="" width="100px" alt=""/><br />
               <sub><b>Kiranpreet Kaur</b></sub>
             </a>
    </td>  
