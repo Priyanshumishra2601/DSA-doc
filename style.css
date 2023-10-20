@@ -329,7 +329,7 @@ background-color: red;
 }
 
 .navbar-link a:hover {
-  background-color: #89c6e5;
+  background-color: #6f7172;
 }
 
 .tab-nav-bar{
@@ -347,13 +347,12 @@ background-color: red;
 }
 
 .tab-menu{
-  color: blueviolet;
+  color: rgb(0, 0, 0);
   list-style: none;
-  background: #43627b;
-  max-width: 800px;
+  background: #ffffff;
+  max-width: 790px;
   padding: 10px;
   white-space: nowrap;
-  border-bottom: 1px solid indianred;
   border-radius: 50px;
   box-shadow: rgb(27, 96, 27);
   overflow-x: auto;
@@ -362,17 +361,18 @@ background-color: red;
 
 
 .tab-btn{
-  color: #001c37;
+  color: #000000;
   display: inline-block;
   font-size: 1em;
   font-weight: 400;
   margin: 0 2px;
   padding: 10px 20px;
   border-radius: 30px;
-  background: #bfe9c9;
-  color: #1f5e91;
+  background: #ffffff;
+  color: #000000;
   font-weight: 600;
   cursor: pointer;
+  border: 5px solid #286868;
   user-select: none;
   transition: 0.3s ease;
 }
@@ -395,7 +395,7 @@ cursor: pointer;
 
 .left-btn, .right-btn{
   position: absolute;
-  color: #001c37;
+  color: #000000;
   font-size: 1.8em;
   padding: 10px;
   cursor: pointer;
@@ -405,14 +405,14 @@ cursor: pointer;
 }
 .left-btn{
   left: 0;
-  background: linear-gradient(to left , transparent, red 80%);
+  background: linear-gradient(to left , transparent, rgb(255, 255, 255) 80%);
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 
 }
 .right-btn{
   right: 0;
-  background: linear-gradient(to left , transparent, red 80%);
+  background: linear-gradient(to left , transparent, rgb(255, 255, 255) 80%);
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
