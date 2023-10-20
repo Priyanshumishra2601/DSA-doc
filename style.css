@@ -100,8 +100,10 @@ header {
 
 #main-doc header {
   background-color: var(--secondaryColor);
-  text-align: left;
-  margin: 0px;
+  text-align: center;
+  FONT-SIZE: 32PX;
+  FONT-WEIGHT: 700;
+  margin: 17px 52PX;
 }
 
 #navbar ul {
@@ -126,8 +128,8 @@ header {
   color: #4d4e53;
   text-decoration: none;
   cursor: pointer;
-  font-size: 2.1rem;
-    font-weight: 900;
+  font-size: 2.0rem;
+    font-weight: 600;
 }
 
 #navbar a:hover {
@@ -148,7 +150,7 @@ section article {
   color: var(--mainText);
   background-color: var(--secondaryColor);
   margin: 15px;
-  font-size: 0.96em;
+  font-size: 2rem;
 }
 
 #main {
@@ -161,6 +163,8 @@ section li {
 }
 
 code {
+  font-size: 1rem;
+  font-weight: 600;
   display: block;
   text-align: left;
   white-space: pre-line;
@@ -265,10 +269,10 @@ table{
   width: 232px;
 }
 tbody{
-  background: linear-gradient(45deg, black, transparent);
+  background: white;
 }
 thead{
-  background: linear-gradient(45deg, #c1bfbf, transparent);
+  background: white;
 }
 tr{
   width: 70px;
