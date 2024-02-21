@@ -90,6 +90,7 @@ body *{
   margin-top: 3px;
 }
 header {
+  
   background-color: var(--secondaryColor);
   color: var(--mainText);
   margin: 10px;
@@ -100,6 +101,7 @@ header {
 
 #main-doc header {
   background-color: var(--secondaryColor);
+  
   text-align: center;
   FONT-SIZE: 32PX;
   FONT-WEIGHT: 700;
@@ -135,9 +137,6 @@ header {
 #navbar a:hover {
  background-color: aqua;
 }
-#navbar a:active {
-  background-color: rgb(26, 63, 63);
- }
 
 #main-doc {
   position: absolute;
@@ -177,6 +176,7 @@ code {
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+
 }
 /* .themeOptions {
   width: 160px;
@@ -252,7 +252,7 @@ code {
   }
 }
 table{
-  width: 612px;
+  width: 762px;
   text-align: center;
   padding-left: 82px;
   border: black;
@@ -262,11 +262,35 @@ table{
   margin-right: auto;
   margin-top: 30px;
 }
+.a3{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.a4{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.a5{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.a6{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
 .level{
+  font-weight: 600;
+  font-size: 26px;
   width: 30px;
 }
 .text-area{
-  width: 232px;
+  font-weight: 600;
+  font-size: 26px;
+  width: 456px;
 }
 tbody{
   background: white;
